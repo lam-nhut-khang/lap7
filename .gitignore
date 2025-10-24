@@ -32,9 +32,7 @@ coverage/
 # =========================
 # DOCKER
 # =========================
-docker-compose.override.yml
-docker-compose.yml
-Dockerfile
+# ⚠️ Giữ lại Dockerfile, docker-compose.yml để đẩy lên GitHub
 .docker/
 *.pid
 

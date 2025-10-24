@@ -1,62 +1,60 @@
-#
-Node modules & package manager caches
+# Node modules & caches
 node_modules
-npm - debug.log *
-    yarn - debug.log *
-    pnpm - debug.log *
-    .pnpm - store /
+npm-debug.log*
+yarn-debug.log*
+pnpm-debug.log*
+.pnpm-store/
 
-    #Environment files(do not copy secrets into image)
-    .env
-    .env.*
-    .env.*.local
+# Environment files (do not copy secrets into image)
+.env
+.env.*
+.env.*.local
 
 # Git / VCS
-    .git
-    .gitignore
-    .gitattributes
+.git
+.gitignore
+.gitattributes
 
-# Logs, temp, test & coverage *
-    .log
-logs /
-    tmp /
-    *
-    .tmp
-coverage /
-    .nyc_output /
+# Logs, temp, test & coverage
+*.log
+logs/
+tmp/
+*.tmp
+coverage/
+.nyc_output/
 
-    #Build outputs
-dist /
-    build /
-    out /
-    .cache /
-    .next /
-    .parcel - cache /
+# Build outputs
+dist/
+build/
+out/
+.cache/
+.next/
+.parcel-cache/
 
-    #Docker / Compose
-docker - compose.yml
-docker - compose.override.yml
-    .dockerignore
+# Docker / Compose
+# ⚠️ Giữ dòng này, Docker không cần copy file compose vào image
+docker-compose.yml
+docker-compose.override.yml
+.dockerignore
 
 # IDE / Editors
-    .vscode /
-    .idea /
-    .history /
-    *
-    .code - workspace
+.vscode/
+.idea/
+.history/
+*.code-workspace
 
-# Database / Data dumps *
-    .sql *
-    .sqlite *
-    .sqlite3 *
-    .db
-dump /
-    data /
-    mongo_data /
+# Database / Data dumps
+*.sql
+*.sqlite
+*.sqlite3
+*.db
+dump/
+data/
+mongo_data/
 
-    #Misc *
-    .bak *
-    .old *
-    .orig *
-    .archive *
-    .tgz
+# Misc
+*.bak
+*.old
+*.orig
+*.archive
+*.tgz
