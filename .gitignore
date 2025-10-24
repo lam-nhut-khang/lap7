@@ -1,0 +1,87 @@
+# =========================
+# NODE.JS / JAVASCRIPT
+# =========================
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+package-lock.json
+yarn.lock
+pnpm-lock.yaml
+
+# =========================
+# ENVIRONMENT CONFIG
+# =========================
+.env
+.env.*
+!.env.example
+
+# =========================
+# BUILD / DIST / CACHE
+# =========================
+dist/
+build/
+.cache/
+.tmp/
+logs/
+*.log
+coverage/
+.nyc_output/
+
+# =========================
+# DOCKER
+# =========================
+docker-compose.override.yml
+docker-compose.yml
+Dockerfile
+.docker/
+*.pid
+
+# =========================
+# OS / EDITOR FILES
+# =========================
+.DS_Store
+Thumbs.db
+ehthumbs.db
+desktop.ini
+
+# VS Code
+.vscode/
+.history/
+*.code-workspace
+
+# JetBrains / WebStorm
+.idea/
+*.iml
+
+# =========================
+# MONGO / SQLITE / DB DUMPS
+# =========================
+*.db
+*.sqlite
+*.sqlite3
+*.sql
+dump/
+data/
+
+# =========================
+# TESTING / TEMP FILES
+# =========================
+*.spec.js
+*.test.js
+jest-html-reporters-*
+test-results/
+coverage-final.json
+
+# =========================
+# SERVICE-SPECIFIC (MICROSERVICES)
+# =========================
+/auth-service/node_modules/
+/order-service/node_modules/
+/product-service/node_modules/
+/payment-service/node_modules/
+/api-gateway/node_modules/
+/rabbitmq/
+/redis/
+/uploads/
